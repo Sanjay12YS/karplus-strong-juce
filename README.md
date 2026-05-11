@@ -10,10 +10,10 @@ This project was developed as part of **ECS7012P – Music and Audio Programming
 
 ## How It Works
 
-1. Excitation** — A short burst of white noise is generated when the pluck button is pressed. Its duration is controlled by the *Width* parameter. White noise is used because it contains a broad range of frequency components.
-2. Delay line** — A circular delay buffer forms the core of the synthesis. The delay length determines the fundamental frequency of the output tone (shorter delay → higher pitch).
-3. Feedback & decay** — The delayed signal is fed back and multiplied by a decay factor slightly less than 1. This keeps the system stable and simulates energy loss in a vibrating string.
-4. Low-pass filtering** — A first-order low-pass filter inside the feedback loop models natural string damping, so higher harmonics decay faster than lower ones — exactly as a real string behaves.
+1. **Excitation** — A short burst of white noise is generated when the pluck button is pressed. Its duration is controlled by the *Width* parameter. White noise is used because it contains a broad range of frequency components.
+2. **Delay line** — A circular delay buffer forms the core of the synthesis. The delay length determines the fundamental frequency of the output tone (shorter delay → higher pitch).
+3. **Feedback & decay** — The delayed signal is fed back and multiplied by a decay factor slightly less than 1. This keeps the system stable and simulates energy loss in a vibrating string.
+4. **Low-pass filtering** — A first-order low-pass filter inside the feedback loop models natural string damping, so higher harmonics decay faster than lower ones — exactly as a real string behaves.
 
 ## Parameters
 
